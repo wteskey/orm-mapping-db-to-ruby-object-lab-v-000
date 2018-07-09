@@ -18,7 +18,7 @@ class Student
    SELECT * FROM students
    SQL
    
-   DB[:conn].exectute(sql)
+   DB[:conn].exectute(sql).map {
   end
 
   def self.find_by_name(name)
